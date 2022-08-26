@@ -93,6 +93,7 @@ function handleBooking(details){
 const getInputValue = (id)=>{
     const inputField =  document.getElementById(id)
     const inputValue = inputField.value
+    inputField.value = ''
     return inputValue
 
 }
@@ -122,13 +123,13 @@ document.getElementById('search-btn').addEventListener('click',function(event){
   event.preventDefault()
   const searchValue = getInputValue('search-field')
   const search = serviceArray.filter(element => {
-    
-    
+  
     const searchElements = element.type.toLowerCase() === searchValue.toLowerCase()
     container.innerHTML = ''
     if(searchValue == ''){
       return container
     }
+
     return searchElements
   
   })  
