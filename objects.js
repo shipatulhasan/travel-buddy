@@ -1,5 +1,5 @@
 const car = {
-    type:'Zip',
+    type:'Jeep',
     title:'Mercedes G-Wagen',
     image: './images/g-wagen.jpg',
     details: 'We are appreciate our customer choice. This Mercedes wagen is best for moutain trip. Make you comfortable and able to give you mountain feelings..',
@@ -8,7 +8,7 @@ const car = {
 }
 const gari = {
     type:'Car',
-    title:'Allion',
+    title:'Ford feasta',
     image: './images/car.jpg',
     details: 'We are appreciate our customer choice. This Mercedes wagen is best for moutain trip. Make you comfortable and able to give you mountain feelings..',
     fare: 3,
