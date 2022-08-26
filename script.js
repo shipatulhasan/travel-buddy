@@ -139,6 +139,7 @@ document.getElementById('search-btn').addEventListener('click',function(event){
   }
   if(newArr.length ===0){
     alert('nothing is found')
+    return displayServices(serviceArray)
   }
 
 })
