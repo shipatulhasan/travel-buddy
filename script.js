@@ -129,7 +129,6 @@ document.getElementById('search-btn').addEventListener('click',function(event){
     if(searchValue == ''){
       return container
     }
-
     return searchElements
   
   })  
@@ -137,6 +136,9 @@ document.getElementById('search-btn').addEventListener('click',function(event){
   console.log(newArr)
   for(const element of newArr){
     display(element)
+  }
+  if(newArr.length ===0){
+    alert('nothing is found')
   }
 
 })
