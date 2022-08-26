@@ -1,0 +1,158 @@
+/*********
+     Fonts 
+**********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/**********
+Utilities 
+*************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn{
+    letter-spacing: 1px;
+}
+.light-blue{
+    background: #F4FAFD;
+}
+/************
+     Navigation pesudo style
+***************/
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+/**************
+    Slider Style 
+************/
+  
+.carousel-indicators .active{
+    width:10%;
+    transition: width .5s linear;
+}
+
+.slider img {
+    height: 80vh;
+    object-fit: cover;
+}
+.slider .title{
+    font-size: 4rem;
+}
+.slider .overlay::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+}
+.carousel-caption p{
+    width: 75%;
+}
+/* Register btn */
+/* Testimonial carousel */
+.testimonial .carousel-control-prev-icon {
+    background-image: url(../images/kuba_arrow_button_set_1.svg);
+}
+.testimonial .carousel-control-next-icon {
+    background-image: url(../images/kuba_arrow_button_set_2.png);
+}
+
+#testimonialCarousel .carousel-control-prev {
+    left: -7.5%;
+}
+#testimonialCarousel .carousel-control-next {
+    right: -7.5%;
+}
+/* mobile carousal */
+#testimonialCarousel2 .carousel-item .row{
+    height: 40vh;
+}
+/* Frequently asked question */
+.accordion-item{
+    border: 1px solid #dee2e6!important;
+    border-radius: 5px;  
+}
+.accordion-button{
+    border-radius: 5px;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #3e3e3e;
+    background-color: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+/* social icon */
+.social{
+    width: 20%;
+}
+.social-icon {
+    width: 2em;
+    line-height: 2em;
+    transition: transform .3s ease-out;
+    -webkit-transition: transform .3s ease-out;
+}
+.social-icon:hover {
+    transform: translateY(-8px);
+}
+
+/* Responsive css */
+@media (max-width: 766.5px){
+    .slider img {
+        height: 400px;
+    }
+    .slider .title {
+        font-size: 1.5rem;
+    }
+    .slider .btn {
+        font-size: .8rem;
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: .8rem;
+    }
+    .social{
+        width: 70%;
+    }
+    #testimonialCarousel2 .carousel-control-prev {
+        left: -12px;
+    }
+    #testimonialCarousel2 .carousel-control-next {
+        right: -12px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+    .slider img {
+        height: 450px;
+    }
+    .slider .title{
+        font-size: 3rem;
+    }
+    .social{
+        width: 25%;
+    }
+    #testimonialCarousel .carousel-control-prev {
+        left: -50px;
+    }
+    #testimonialCarousel .carousel-control-next {
+        right: -50px;
+    }
+}

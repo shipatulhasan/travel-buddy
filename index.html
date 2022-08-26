@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Buddy - Explore Every Momment of Life</title>
+
+  <!-- Fontawsome CDN -->
+  <script src="https://kit.fontawesome.com/59949b2abf.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+  <!-- Header parts -->
+  <header>
+    <nav class="navbar d-flex nav navbar-expand-lg text-capitalize py-4">
+      <div class="container-fluid container-md ">
+        <a class="navbar-brand text-capitalize text-dark fw-bolder fs-4" href="/">Travel<span
+            class="text-warning fs-2 ">.buddy</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="./images/hamburger.png" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mx-auto gap-2 gap-lg-5 mb-2 mb-lg-0 fw-bold ">
+            <li class="nav-item ">
+              <a class="nav-link text-dark" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="">Subscribe</a>
+            </li>
+         
+          </ul>
+          <form class="d-flex" role="search">
+            <input id="search-field" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" id="search-btn" type="submit">Search</button>
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Slider part -->
+    <section class="slider container pb-3 pb-md-5">
+      <div id="mycarousel" class="carousel slide " data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mycarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded">
+          
+          <div class="carousel-item active">
+            <div class="overlay">
+              <img src="./images/banner1.jpg" class=" w-100 img-fluid" alt="...">
+              <div
+                class="carousel-caption top-0 bottom-0 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center mx-auto z-index-1">
+                <h1 class="title fw-semibold pb-2">Life is short<span class="text-warning"> and the world is wide.</span></h1>
+                <p class="lh-base mx-auto">Don't be affired. Fill safe to travel anywhere in this world with us. We are ready to provied you the best vehicles to make your journey more beautiful. </p>
+                <a href="#" class="btn btn-primary text-white text-capitalize fw-semibold mt-2 px-3 py-2">
+                  Book now
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item ">
+            <div class="overlay">
+              <img src="./images/banner2.jpg" class=" w-100 img-fluid" alt="...">
+              <div
+                class="carousel-caption top-0 bottom-0 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center mx-auto z-index-1">
+                <h1 class="title fw-semibold pb-2">Collect Moments,<span class="text-warning"> Not Things.</span></h1>
+                <p class="lh-base mx-auto">So whta are you waiting for. Just take your vehicle and explore.</p>
+
+                <a href="#" class="btn btn-primary text-white text-capitalize fw-semibold mt-2 px-3 py-2">
+                  Book now
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item ">
+            <div class="overlay">
+              <img src="./images/banner3.jpg" class=" w-100 img-fluid" alt="...">
+              <div
+                class="carousel-caption top-0 bottom-0 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-center mx-auto z-index-1">
+                <h1 class="title fw-semibold pb-2">Explore all the way <span class="text-warning">of your journey</span></h1>
+                <p class="lh-base mx-auto">Enjoy all the momment with travell buddy. Just click on book and select the best vehicle for your travel.</p>
+
+                <a href="#" class="btn btn-primary text-white text-capitalize fw-semibold mt-2 px-3 py-2">
+                  Book now
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+  </header>
+  <!-- Header part end -->
+
+  <!-- Main part start -->
+
+  <main class="container ">
+    <!-- Courses -->
+    <section class="courses py-3 py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="headline lh-base text-capitalize text-center px-3 mx-auto">
+            <h2 class="fs-1 fw-bold pb-2">Discover <span class="text-warning"> our </span>Services</h2>
+            <p class="fs-6 fw-semibold">Check out most 🔥 Popular vehicels that we provide. Low cost high service. Don't waste your time. Just click and book now.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services py-3 py-md-5">
+        <div id="service-container" class="row row-cols-1 row-cols-lg-2 g-4">
+          <!-- vehicles -->
+      </div>
+      <!-- <div class="text-center">
+        <a href="#" class="btn btn-primary text-white text-capitalize fw-semibold mt-2 px-3 py-2">
+          View all Courses
+        </a>
+      </div> -->
+
+    </section>
+
+    <!-- About us -->
+    <section class="about my-3 my-md-4 my-lg-5 light-blue rounded">
+      <div class="row row-cols-1 row-cols-md-2 align-items-center">
+        <div class="clo">
+          <div>
+            <img class="w-100 img-fluid rounded-start" src="./images/tourRv.jpg" alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="content p-3 p-md-2">
+            <h2 class="fs-2 lh-base text-dark fw-bold">
+              Explore Tour Buddy
+            </h2>
+            <p class="py-2 fw-light fs-6 lh-base "><strong><em>Tour Buddy</em></strong> is an online
+              tourist company. We provide tour guides, vehicles and other necessary things for travel at reasonable prices.
+            </p>
+            <div class="row row-cols-2 row-cols-lg-3 pt-2">
+              <div class="col">
+                <div class="counter">
+                  <h2 class="fs-2 lh-sm text-dark fw-bolder">
+                    3.2K+
+                  </h2>
+                  <p class="lh-sm">
+                    clients
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="counter">
+                  <h2 class="fs-2 lh-sm text-dark fw-bolder">
+                    600+
+                  </h2>
+                  <p class="lh-sm">
+                    country
+                  </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="counter">
+                  <h2 class="fs-2 lh-sm text-dark fw-bolder">
+                    2k+
+                  </h2>
+                  <p class="lh-sm">
+                    Rating & Review </p>
+                </div>
+              </div>
+
+            </div>
+            <a href="#" class="btn btn-primary text-white text-capitalize fw-semibold mt-2 px-3 py-2">
+              Read More
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration -->
+    <section class="register py-3 py-md-5 ">
+      <div class="card bg-primary p-3 p-md-5">
+        <div class="row gx-2 gx-lg-1 justify-content-berween align-items-center">
+          <div class="col-md-8">
+            <div class="card-body text-white">
+              <h5 class="card-title text-capitalize lh-base fs-3 fw-bold">Are you ready?</h5>
+              <p class="card-text"> Register here and explore the world with Travel budddy</p>
+            </div>
+          </div>
+          <div class="col-md-4 ps-3 pe-0 pe-md-4 ps-md-0 d-md-flex justify-content-end">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light text-primary fw-semibold px-3 py-2" data-bs-toggle="modal" data-bs-target="#mymodal">
+              Register Now
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="mymodal" tabindex="-1" aria-labelledby="mymodalLabel" style="display: none;" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="mymodalLabel">Signup Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="Md Shipatul hasan">
+                      <label for="floatingInput">User Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Sign up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- client section -->
+    <section class="team py-3 py-md-5">
+      <div class="row">
+        <div class="col-md-8 col-lg-6">
+          <div class="headline px-3 mx-auto">
+            <h2 class="fs-1 lh-base fw-bold pb-2">Meet Our <span class="text-warning">Team</span></h2>
+          </div>
+        </div>
+      </div>
+      <!-- Studets -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-4">
+        <!-- Student-1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/student/student-1.png" class="card-img-top" alt="...">
+            <div class="card-footer pt-4">
+              <h5 class="card-title fw-bold fs-6">Awlad Hossain</h5>
+              <small class="card-text text-muted fw-light">CEO</small>
+            </div>
+          </div>
+        </div>
+        <!-- Student-2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/student/jack.jpg" class="card-img-top" alt="...">
+            <div class="card-footer pt-4">
+              <h5 class="card-title fw-bold fs-6">jack mathon</h5>
+              <small class="card-text text-muted fw-light">Manager</small>
+            </div>
+          </div>
+        </div>
+        <!-- Student-3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/student/student-3.png" class="card-img-top" alt="...">
+            <div class="card-footer pt-4">
+              <h5 class="card-title fw-bold fs-6">Imran Hossain</h5>
+              <small class="card-text text-muted fw-light">Support Team Leader</small>
+            </div>
+          </div>
+        </div>
+        <!-- Student-4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="./images/student/ceo.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-footer pt-4">
+              <h5 class="card-title fw-bold fs-6">Dj crooow</h5>
+              <small class="card-text text-muted fw-light">Tour guide</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-primary text-white text-capitalize fw-semibold mt-3 px-3 py-2">
+          View all
+        </a>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial py-3 py-md-5 ">
+      <div class="row pb-3 pb-md-5 justify-content-center text-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="headline px-3 mx-auto">
+            <h2 class="fs-1 lh-base fw-bold pb-2">Some clients <span class="text-warning">Feedback</span></h2>
+            <p class="fs-6 fw-light">Some of our client's share their thoughts about their experience with us. Feel free to
+              checkout</p>
+          </div>
+        </div>
+      </div>
+      <!-- Testomonial slider pc and tablet -->
+      <div id="testimonialCarousel" class="carousel slide testimonial d-none d-md-block" data-bs-ride="carousel"
+        data-bs-touch="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 p-4 pb-1">
+                  <div class="d-flex justify-content-between">
+                    <img src="./images/comma.png" class="" alt="...">
+                    <p class="text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="card-body py-4">
+                    <p class="card-text">very good and well organised.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-white pt-3  d-flex align-items-start gap-3">
+                    <img src="./images/student/student-5.png" alt="">
+                    <div class="title">
+                      <h6 class="fw-bold">Awlad Hossain</h6>
+                      <h6 class="fw-light text-muted">USA</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 p-4 pb-1">
+                  <div class="d-flex justify-content-between">
+                    <img src="./images/comma.png" class="" alt="...">
+                    <p class="text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="card-body py-4">
+                    <p class="card-text">Nice services</p>
+                  </div>
+                  <div class="card-footer bg-white pt-3  d-flex align-items-start gap-3">
+                    <img src="./images/student/student-6.png" alt="">
+                    <div class="title">
+                      <h6 class="fw-bold">jafrin syka</h6>
+                      <h6 class=" fw-light text-muted">Canada</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card h-100 p-4 pb-1">
+                  <div class="d-flex justify-content-between">
+                    <img src="./images/comma.png" class="" alt="...">
+                    <p class="text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="card-body py-4">
+                    <p class="card-text">very good and well organised.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-white pt-3  d-flex align-items-start gap-3">
+                    <img src="./images/student/student-5.png" alt="">
+                    <div class="title">
+                      <h6 class="fw-bold">Awlad Hossain</h6>
+                      <h6 class="fw-light text-muted">USA</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100 p-4 pb-1">
+                  <div class="d-flex justify-content-between">
+                    <img src="./images/comma.png" class="" alt="...">
+                    <p class="text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="card-body py-4">
+                    <p class="card-text">Nice services</p>
+                  </div>
+                  <div class="card-footer bg-white pt-3  d-flex align-items-start gap-3">
+                    <img src="./images/student/student-6.png" alt="">
+                    <div class="title">
+                      <h6 class="fw-bold">jafrin syka</h6>
+                      <h6 class=" fw-light text-muted">Canda</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Testomonial slider mobile -->
+      <div id="testimonialCarousel2" class="carousel slide testimonial d-block d-md-none" data-bs-ride="carousel"
+        data-bs-touch="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col">
+                <div class="card h-100 p-2 pb-1">
+                  <div class="d-flex justify-content-between">
+                    <img src="./images/comma.png" class="" alt="...">
+                    <p class="text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="card-body py-4">
+                    <p class="card-text">very good and well organised.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-white pt-3  d-flex align-items-start gap-3">
+                    <img src="./images/student/student-5.png" alt="">
+                    <div class="title">
+                      <h6 class="fw-bold">Awlad Hossain</h6>
+                      <h6 class="fw-light text-muted">USA</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col">
+                <div class="card h-100 p-2 pb-1">
+                  <div class="d-flex justify-content-between">
+                    <img src="./images/comma.png" class="" alt="...">
+                    <p class="text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="card-body py-4">
+                    <p class="card-text">Nice services</p>
+                  </div>
+                  <div class="card-footer bg-white pt-3  d-flex align-items-start gap-3">
+                    <img src="./images/student/student-6.png" alt="">
+                    <div class="title">
+                      <h6 class="fw-bold">jafrin syka</h6>
+                      <h6 class=" fw-light text-muted">Canada</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </section>
+
+    <!-- Brand section -->
+
+    <section class="brand py-5 d-none d-lg-block ">
+      <div class="row pb-5 justify-content-center text-center">
+        <div class="col-md-10">
+          <div class="headline px-3 mx-auto">
+            <h2 class="fs-1 lh-base fw-bold">Trusted by <span class="text-warning">over 800+ </span>companies</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-6 gx-4 align-items-center">
+        <div class="item"><img class="img-fuild w-75" src="./images/company/company-1.png" alt=""></div>
+        <div class="item"><img class="img-fuild w-75" src="./images/company/company-2.png" alt=""></div>
+        <div class="item"><img class="img-fuild w-75" src="./images/company/company-3.png" alt=""></div>
+        <div class="item"><img class="img-fuild w-75" src="./images/company/company-4.png" alt=""></div>
+        <div class="item"><img class="img-fuild w-75" src="./images/company/company-5.png" alt=""></div>
+        <div class="item"><img class="img-fuild w-75" src="./images/company/company-6.png" alt=""></div>
+      </div>
+    </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="vehicles-modal" tabindex="-1" aria-labelledby="mymodalLabel" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="vehicles-details">
+    
+            </div>
+          </div>
+        </div>
+  </main>
+
+  <!-- Main part end -->
+
+  <!-- Footer -->
+  <footer class="mt-3 mt-md-5 py-5 bg-black text-center text-white">
+    <div class="container">
+      <a class="text-capitalize text-white text-decoration-none mb-3 fs-4 fw-bolder" href="/">Travel<span
+          class="text-warning fs-2 ">.Buddy</span></a>
+      <p class="mt-2 mb-1">300 Jay St, Brooklyn, NY 11201, United States</p>
+      <p>
+        <a class="text-white text-decoration-none " href="#">Privacy Ploicy</a> | <a
+          class="text-white text-decoration-none " href="#"> Terms of use</a>
+      </p>
+      <div class="social pt-3 row row-cols-4 mx-auto gx-3 justify-content-center">
+
+        <a href="https://www.instagram.com/"><i
+            class="fa-brands fa-instagram social-icon shadow-lg rounded-circle text-warning bg-dark fs-6 "></i></a>
+        <a href="https://twitter.com/home"><i
+            class="fa-brands fa-twitter social-icon shadow-lg rounded-circle text-warning bg-dark fs-6"></i></a>
+        <a href="https://facebook.com"><i
+            class="fa-brands fa-facebook social-icon shadow-lg rounded-circle text-warning bg-dark fs-6"></i></a>
+        <a href="https://youtube.com/"><i
+            class="fa-brands fa-youtube social-icon shadow-lg rounded-circle text-warning bg-dark fs-6"></i></a>
+      </div>
+    </div>
+
+
+  </footer>
+
+
+  <!-- Bootstrap script CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+  <script src="./objects.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
